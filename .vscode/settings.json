@@ -1,0 +1,23 @@
+{
+	"files.associations": {
+		"bitset": "cpp"
+	},
+	"editor.formatOnSave": true, // ファイル保存時の自動フォーマット有効
+	"editor.formatOnType": true, // 文字入力行の自動フォーマット有効
+	"editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettierに指定
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true // ファイル保存時に ESLint でフォーマット
+	},
+	// Python ファイル用の設定
+	"[python]": {
+		// VS Code のフォーマッターは無効にしておく
+		"editor.defaultFormatter": null,
+		// ファイル保存時に自動でフォーマットする
+		"editor.formatOnSave": true
+	},
+
+	// Python 拡張が使用する外部フォーマッターとして black コマンドを指定する
+	// （black コマンドは pip install black でインストールしておく）
+	"python.formatting.provider": "black",
+	"black-formatter.args": ["--line-length", "100"]
+}
