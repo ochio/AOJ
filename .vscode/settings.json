@@ -19,5 +19,6 @@
 	// Python 拡張が使用する外部フォーマッターとして black コマンドを指定する
 	// （black コマンドは pip install black でインストールしておく）
 	"python.formatting.provider": "none",
-	"black-formatter.args": ["--line-length", "100"]
+	"black-formatter.args": ["--line-length", "100"],
+	"editor.insertSpaces": true
 }
